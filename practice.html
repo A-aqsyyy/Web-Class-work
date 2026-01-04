@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            box-shadow:0 10px 25px rgba(0,0,0,0.1) ;
+            margin:auto ;
+            max-width: 900px;
+        }
+        .left{
+            padding: 50px;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        .left-in{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            row-gap: 30px;
+            column-gap: 50px;
+        }
+        .full-width{
+            grid-column: 1/-1;
+        }
+        label{
+            font-size: 15px;
+            font-weight:bold;
+            display:block;
+            margin: 15px 0px;
+
+        }
+        input,textarea{
+            width:100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius:4px;
+        }
+        button{
+            margin: 20px;
+            color: white;
+            background-color:#6aa84f;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .in{
+        height: 50px;
+        width:370px;
+
+        }
+        .right img{
+           width: 100%;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Contact Form #08</h1>
+    <div class="container">
+    <div class="left">
+        <h2> Get in touch with us</h2>
+        <div class=left-in>
+            <div>
+        <label> FULL NAME</label>
+        <input type="text" placeholder="Name"><br>
+            </div>
+            <div>
+        <label> EMAIL ADDRESS</label>
+        <input type="email"placeholder="Email" >
+            </div>
+            <div class="full-width">
+        <label> SUBJECT</label>
+        <input type="text" placeholder="Subject">
+        <label> MESSAGE</label>
+        <input class="in" type="text" placeholder="Message">
+        <button>Send Message</button>
+        </div>
+            </div>
+            
+    </div>
+    <div class="right">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2023/06/businesslaptops-2048px-0943.jpg" alt="pic">
+            </div>
+    </div>
+</body>
+</html>
